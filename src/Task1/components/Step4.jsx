@@ -1,32 +1,32 @@
 import React, { useEffect, useState } from "react";
-import { useFormContext } from "../../Context/Task1"; // Adjust the import path as needed
+import { useFormContext } from "../../Context/Task1"; 
 import Navigation from "../../components/Navigation";
 
 const Step4 = ({ onNext, onBack, Step }) => {
   const { formData, updateFormData } = useFormContext();
   const [selectedOption, setSelectedOption] = useState(
     formData.permission || "admins"
-  ); // Initialize with context value
-  const [error, setError] = useState(""); // State for validation error
+  ); 
+  const [error, setError] = useState(""); 
 
   const handleOptionChange = (option) => {
     setSelectedOption(option);
-    updateFormData("permission", option); // Update the context with the selected option
-    setError(""); // Clear error when an option is selected
+    updateFormData("permission", option); 
+    setError(""); 
   };
 
   useEffect(() => {
-    // Set the selected option when formData changes
+   
     setSelectedOption(formData.permission);
   }, [formData.permission]);
 
   const handleNext = () => {
-    // Validation
+
     if (!selectedOption) {
       setError("Please select an option.");
-      return; // Prevent moving to next step if validation fails
+      return; 
     }
-    onNext(); // Proceed to next step if validation is successful
+    onNext(); 
   };
 
   return (
@@ -40,7 +40,7 @@ const Step4 = ({ onNext, onBack, Step }) => {
             Don’t panic — You can also customize these permissions in settings.
           </p>
           <div className="space-y-4 mb-6">
-            {/* Option 1 */}
+         
             <div
               className={`p-4 border rounded-lg cursor-pointer ${
                 selectedOption === "everyone"
@@ -54,7 +54,7 @@ const Step4 = ({ onNext, onBack, Step }) => {
                 All users can see it, but guests cannot access the projects.
               </p>
             </div>
-            {/* Option 2 */}
+        
             <div
               className={`p-4 border rounded-lg cursor-pointer ${
                 selectedOption === "admins"
@@ -68,7 +68,7 @@ const Step4 = ({ onNext, onBack, Step }) => {
                 Only admins can manage everything.
               </p>
             </div>
-            {/* Option 3 */}
+          
             <div
               className={`p-4 border rounded-lg cursor-pointer ${
                 selectedOption === "specific"
@@ -85,10 +85,10 @@ const Step4 = ({ onNext, onBack, Step }) => {
               </p>
             </div>
           </div>
-          {/* Display error message */}
+       
         </div>
         {error && <p className="text-red-500 text-center">{error}</p>}{" "}
-        {/* Navigation Buttons */}
+  
         <Navigation onNext={handleNext} onBack={onBack} Step={Step} />
       </div>
     </div>

@@ -7,7 +7,7 @@ const Step1 = ({ onNext, onBack }) => {
   const { formData, updateFormData, Step } = useFormContext();
   const [errors, setErrors] = useState({});
 
-  // Validation function
+
   const validateFields = () => {
     const newErrors = {};
 
@@ -60,7 +60,7 @@ const Step1 = ({ onNext, onBack }) => {
           Create a Project
         </h2>
 
-        {/* Project Name */}
+      
         <div className="mb-6">
           <label className="block text-gray-700 font-medium mb-2">
             Project Name
@@ -79,7 +79,7 @@ const Step1 = ({ onNext, onBack }) => {
           )}
         </div>
 
-        {/* Client Selection */}
+      
         <div className="mb-6">
           <label className="block text-gray-700 font-medium mb-2">Client</label>
           <div className="flex flex-col sm:flex-row sm:space-x-3">
@@ -106,7 +106,7 @@ const Step1 = ({ onNext, onBack }) => {
             <p className="text-red-500 text-sm mt-1">{errors.client}</p>
           )}
 
-          {/* Render New Client Input Fields */}
+         
           {formData.newClients.map((client, index) => (
             <div key={index} className="flex items-center mt-3">
               <input
@@ -135,7 +135,7 @@ const Step1 = ({ onNext, onBack }) => {
           ))}
         </div>
 
-        {/* Date Picker */}
+       
         <div className="mb-6">
           <label className="block text-gray-700 font-medium mb-2">Dates</label>
           <div className="flex flex-col sm:flex-row sm:space-x-3">
@@ -164,7 +164,6 @@ const Step1 = ({ onNext, onBack }) => {
           )}
         </div>
 
-        {/* Notes */}
         <div className="mb-8">
           <label className="block text-gray-700 font-medium mb-2">Notes</label>
           <textarea
@@ -176,7 +175,7 @@ const Step1 = ({ onNext, onBack }) => {
           ></textarea>
         </div>
 
-        {/* Navigation Buttons */}
+       
         <Navigation onNext={handleNext} onBack={onBack} />
       </div>
     </div>

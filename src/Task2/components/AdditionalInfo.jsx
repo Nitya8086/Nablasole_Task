@@ -20,7 +20,7 @@ const AdditionalInfo = () => {
 
         <form>
           <div className="grid grid-cols-2 lg:px-20 md:grid-cols-2 gap-4 md:pb-10">
-            {/* Address */}
+        
             <div className="flex flex-col">
               <label className="text-gray-600 text-sm sm:text-base">
                 Address*
@@ -32,7 +32,7 @@ const AdditionalInfo = () => {
               />
             </div>
 
-            {/* City */}
+      
             <div className="flex flex-col">
               <label className="text-gray-600 text-sm sm:text-base">
                 City*
@@ -44,7 +44,7 @@ const AdditionalInfo = () => {
               />
             </div>
 
-            {/* State */}
+      
             <div className="flex flex-col">
               <label className="text-gray-600 text-sm sm:text-base">
                 State/Province*
@@ -55,8 +55,7 @@ const AdditionalInfo = () => {
                 placeholder="Enter Your State/Province"
               />
             </div>
-
-            {/* Country */}
+       
             <div className="flex flex-col">
               <label className="text-gray-600 text-sm sm:text-base">
                 Country*
@@ -68,7 +67,7 @@ const AdditionalInfo = () => {
               />
             </div>
 
-            {/* Date of Birth */}
+       
             <div className="flex flex-col">
               <label className="text-gray-600 text-sm sm:text-base">
                 Date of Birth*
@@ -79,7 +78,7 @@ const AdditionalInfo = () => {
               />
             </div>
 
-            {/* Gender */}
+        
             <div className="flex flex-col">
               <label className="text-gray-600 text-sm sm:text-base">
                 Gender*
@@ -92,7 +91,7 @@ const AdditionalInfo = () => {
               </select>
             </div>
 
-            {/* Hobbies */}
+      
             <div className="flex flex-col col-span-2">
               <label className="text-gray-600 text-sm sm:text-base">
                 Hobbies/Interests

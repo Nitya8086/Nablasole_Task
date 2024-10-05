@@ -59,7 +59,7 @@ const Step5 = ({ onNext, onBack, Step }) => {
           Tasks
         </h2>
 
-        {/* Add Task Input */}
+       
         <div className="relative flex flex-wrap items-center space-y-2 sm:space-y-0 sm:space-x-2 mb-4">
           <div className="relative flex-grow">
             <input
@@ -74,7 +74,7 @@ const Step5 = ({ onNext, onBack, Step }) => {
               onChange={(e) => setSearchQuery(e.target.value)}
               disabled={selectedTasks.length >= maxSelectedTasks}
             />
-            {/* Suggestions dropdown for filtered tasks */}
+            
             {searchQuery && filteredTasks.length > 0 && (
               <ul className="absolute z-10 bg-white border border-gray-300 mt-1 rounded w-full max-h-40 overflow-y-auto">
                 {filteredTasks.map((task) => (
@@ -91,7 +91,7 @@ const Step5 = ({ onNext, onBack, Step }) => {
           </div>
         </div>
 
-        {/* Selected Tasks Display */}
+
         <div className="h-16 overflow-auto w-full flex">
           {selectedTasks.map((task) => (
             <div
@@ -107,7 +107,7 @@ const Step5 = ({ onNext, onBack, Step }) => {
               </button>
             </div>
           ))}
-          {/* Show error message if no tasks are selected */}
+         
           {error && selectedTasks.length < 1 && (
             <div className="flex justify-center items-center w-full rounded-full h-1/2">
               <span className="text-md text-red-500 flex items-center">
@@ -124,7 +124,7 @@ const Step5 = ({ onNext, onBack, Step }) => {
           )}
         </div>
 
-        {/* Task List */}
+   
         <ul className="space-y-2 overflow-y-auto h-[300px] mb-2">
           {tasks.map((task) => (
             <li
@@ -147,7 +147,7 @@ const Step5 = ({ onNext, onBack, Step }) => {
           ))}
         </ul>
 
-        {/* Navigation Buttons */}
+   
         <Navigation onNext={handleNext} onBack={onBack} Step={Step} />
       </div>
     </div>

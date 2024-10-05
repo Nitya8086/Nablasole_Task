@@ -20,7 +20,7 @@ const ProfileForm = () => {
 
         <form>
           <div className="grid grid-cols-2 gap-4 md:grid-cols-2 lg:px-20 md:pb-10">
-            {/* Brand Name */}
+         
             <div className="flex flex-col">
               <label className="text-gray-600 text-sm sm:text-base">
                 Brand Name*
@@ -32,7 +32,7 @@ const ProfileForm = () => {
               />
             </div>
 
-            {/* Brand Type */}
+           
             <div className="flex flex-col">
               <label className="text-gray-600 text-sm sm:text-base">
                 Brand Type*
@@ -44,7 +44,7 @@ const ProfileForm = () => {
               </select>
             </div>
 
-            {/* Street Address */}
+           
             <div className="flex flex-col">
               <label className="text-gray-600 text-sm sm:text-base">
                 Street Address*
@@ -56,7 +56,7 @@ const ProfileForm = () => {
               />
             </div>
 
-            {/* City */}
+       
             <div className="flex flex-col">
               <label className="text-gray-600 text-sm sm:text-base">
                 City*
@@ -68,7 +68,7 @@ const ProfileForm = () => {
               />
             </div>
 
-            {/* Zip Code */}
+      
             <div className="flex flex-col">
               <label className="text-gray-600 text-sm sm:text-base">
                 Zip Code*
@@ -80,7 +80,7 @@ const ProfileForm = () => {
               />
             </div>
 
-            {/* Tax ID Number */}
+         
             <div className="flex flex-col">
               <label className="text-gray-600 text-sm sm:text-base">
                 Tax ID Number*
@@ -92,7 +92,7 @@ const ProfileForm = () => {
               />
             </div>
 
-            {/* Document Section */}
+          
             <div className="col-span-2">
               <h3 className="text-blue-400 text-sm sm:text-base mb-2">
                 Documents
@@ -103,7 +103,7 @@ const ProfileForm = () => {
               </p>
 
               <div className="mt-2">
-                {/* Electronically Sign Agreement */}
+                
                 <div className="flex items-center border-2  p-2 rounded-lg">
                   <input type="checkbox" className="mr-2" />
                   <label>Electronically sign the agreement(s)</label>
@@ -117,7 +117,7 @@ const ProfileForm = () => {
               </div>
             </div>
 
-            {/* COI PDF Upload Section */}
+           
             <div className="col-span-2">
               <h3 className="text-blue-400 text-sm sm:text-base mb-2">
                 COI PDF Upload
@@ -128,7 +128,7 @@ const ProfileForm = () => {
               </p>
 
               <div className="mt-2">
-                {/* Electronically Sign Agreement for COI */}
+               
                 <div className="flex items-center border-2  p-2 rounded-lg">
                   <input type="checkbox" className="mr-2" />
                   <label>Electronically sign the agreement(s)</label>

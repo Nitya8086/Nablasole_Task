@@ -49,7 +49,7 @@ const Summary = () => {
           Project Summary
         </h2>
 
-        {/* Project Information */}
+      
         <div className="mb-8" data-aos="fade-right">
           <h3 className="text-xl font-semibold mb-4 text-blue-500">
             Project Info
@@ -75,7 +75,7 @@ const Summary = () => {
           </ul>
         </div>
 
-        {/* Budget Information */}
+      
         <div className="mb-8" data-aos="fade-left">
           <h3 className="text-xl font-semibold mb-4 text-blue-500">
             Budget Info
@@ -98,7 +98,7 @@ const Summary = () => {
           </ul>
         </div>
 
-        {/* Task List */}
+   
         <div className="mb-8" data-aos="fade-right">
           <h3 className="text-xl font-semibold mb-4 text-blue-500">Tasks</h3>
           <ul className="space-y-2 text-gray-700 text-sm sm:text-base md:text-lg">
@@ -118,7 +118,7 @@ const Summary = () => {
           </ul>
         </div>
 
-        {/* Team Members */}
+    
         <div className="mb-8" data-aos="fade-left">
           <h3 className="text-xl font-semibold mb-4 text-blue-500">
             Team Members
@@ -140,7 +140,7 @@ const Summary = () => {
           </ul>
         </div>
 
-        {/* Permission Information */}
+     
         <div className="mb-8" data-aos="fade-right">
           <h3 className="text-xl font-semibold mb-4 text-blue-500">
             Permission

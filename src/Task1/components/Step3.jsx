@@ -6,7 +6,7 @@ const Step3 = ({ onNext, onBack, Step }) => {
   const { formData, updateFormData } = useFormContext();
   const [errors, setErrors] = useState({});
 
-  // Validation function to check required fields
+
   const validateFields = () => {
     const newErrors = {};
     let valid = true;
@@ -35,7 +35,7 @@ const Step3 = ({ onNext, onBack, Step }) => {
             You can also customize this view in settings.
           </p>
 
-          {/* Options for List and Board View */}
+        
           <div className="flex justify-around mb-6 gap-2">
             {["list", "board"].map((view) => (
               <div
@@ -48,7 +48,7 @@ const Step3 = ({ onNext, onBack, Step }) => {
                 onClick={() => updateFormData("selectedView", view)}
               >
                 <div className="w-12 h-12 bg-gray-200 flex items-center justify-center mb-2">
-                  {/* Placeholder for List/Board Icon */}
+              
                   {view === "list" ? (
                     <svg
                       className="w-6 h-6 text-gray-600"
@@ -94,7 +94,6 @@ const Step3 = ({ onNext, onBack, Step }) => {
           )}
         </div>
 
-        {/* Navigation Buttons */}
         <Navigation onNext={handleNext} onBack={onBack} Step={Step} />
       </div>
     </div>

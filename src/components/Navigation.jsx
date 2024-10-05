@@ -8,7 +8,7 @@ function Navigation({ onNext, onBack }) {
 
   const nextHandler = () => {
     onNext();
-    // localStorage.setItem("project", JSON.stringify(formData));
+   
   };
 
   return (
@@ -48,7 +48,7 @@ function Navigation({ onNext, onBack }) {
         )}
       </div>
 
-      {/* Step Indicator */}
+    
       <div className="flex justify-center mt-4 space-x-2">
         {[1, 2, 3, 4, 5, 6].map((step) => (
           <div

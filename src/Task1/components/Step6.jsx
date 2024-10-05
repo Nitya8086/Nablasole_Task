@@ -80,7 +80,7 @@ const Step6 = ({ onNext, onBack, Step }) => {
           Team Members
         </h2>
 
-        {/* Add Member Input */}
+   
         <div className="relative flex flex-wrap items-center space-y-2 sm:space-y-0 sm:space-x-2 mb-4">
           <div className="relative flex-grow">
             <input
@@ -95,7 +95,7 @@ const Step6 = ({ onNext, onBack, Step }) => {
               onChange={(e) => setSearchQuery(e.target.value)}
               disabled={selectedMembers.length >= maxSelectedMembers}
             />
-            {/* Suggestions dropdown for filtered members */}
+           
             {searchQuery && filteredMembers.length > 0 && (
               <ul className="absolute z-10 bg-white border border-gray-300 mt-1 rounded w-full max-h-40 overflow-y-auto">
                 {filteredMembers.map((member) => (
@@ -112,7 +112,7 @@ const Step6 = ({ onNext, onBack, Step }) => {
           </div>
         </div>
 
-        {/* Selected Members Display */}
+      
         <div className="h-16 overflow-auto w-full flex">
           {selectedMembers.map((member) => (
             <div
@@ -128,7 +128,7 @@ const Step6 = ({ onNext, onBack, Step }) => {
               </button>
             </div>
           ))}
-          {/* Show error message if no members are selected */}
+      
           {error && selectedMembers.length < 1 && (
             <div className="flex justify-center items-center w-full rounded-full h-1/2">
               <span className="text-md text-red-500 flex items-center">
@@ -145,7 +145,7 @@ const Step6 = ({ onNext, onBack, Step }) => {
           )}
         </div>
 
-        {/* Member List */}
+    
         <ul className="space-y-2 overflow-y-auto h-[300px] mb-2">
           {teamMembers.map((member) => (
             <li
@@ -171,7 +171,7 @@ const Step6 = ({ onNext, onBack, Step }) => {
           ))}
         </ul>
 
-        {/* Navigation Buttons */}
+       
         <Navigation onNext={handleNext} onBack={onBack} Step={Step} />
       </div>
     </div>

@@ -21,7 +21,7 @@ const ProfileForm = () => {
 
         <form>
           <div className="grid grid-cols-1 lg:px-20 md:grid-cols-2 gap-4 md:pb-10">
-            {/* First Name */}
+     
             <div className="flex flex-col">
               <label className="text-gray-600 text-sm sm:text-base">
                 First Name*
@@ -33,7 +33,7 @@ const ProfileForm = () => {
               />
             </div>
 
-            {/* Last Name */}
+           
             <div className="flex flex-col">
               <label className="text-gray-600 text-sm sm:text-base">
                 Last Name*
@@ -45,7 +45,7 @@ const ProfileForm = () => {
               />
             </div>
 
-            {/* Email */}
+   
             <div className="flex flex-col">
               <label className="text-gray-600 text-sm sm:text-base">
                 Email*
@@ -57,7 +57,7 @@ const ProfileForm = () => {
               />
             </div>
 
-            {/* Phone Number */}
+     
             <div className="flex flex-col">
               <label className="text-gray-600 text-sm sm:text-base">
                 Phone Number*
@@ -69,7 +69,7 @@ const ProfileForm = () => {
               />
             </div>
 
-            {/* Password */}
+       
             <div className="flex flex-col">
               <label className="text-gray-600 text-sm sm:text-base">
                 Password*
@@ -81,7 +81,7 @@ const ProfileForm = () => {
               />
             </div>
 
-            {/* Confirm Password */}
+        
             <div className="flex flex-col">
               <label className="text-gray-600 text-sm sm:text-base">
                 Confirm Password*
