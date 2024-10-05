@@ -1,0 +1,15 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Styles */
+.input {
+  background-color: #f9fafb;
+  border-color: #e5e7eb;
+}
+
+.input:focus {
+  background-color: #ffffff;
+  border-color: #3b82f6;
+}
